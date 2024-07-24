@@ -1,0 +1,2011 @@
+body {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  justify-content: space-between;
+  align-items: center;
+}
+
+span:hover {
+  background-color: black;
+  color: white;
+  transition: all 90ms;
+}
+/* h3::before
+{
+  content: "\276F";
+  padding:2px;
+  
+} */
+.warehouse {
+  height: 90vh;
+  width: 81vw;
+  background-image: url("images/warehouse-blueprint.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  opacity: 0.8;
+}
+.shaino {
+  height: 54px;
+  width: 90px;
+  position: absolute;
+  right: 3%;
+  top: -3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.shaino .hii {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  opacity: 0;
+}
+.shaino .hii img {
+  height: 100%;
+  width: 100%;
+}
+.shaino .name {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.shaino .name span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shaino .name span:hover {
+  background-color: initial;
+  color: initial;
+}
+.shaino:hover .hii {
+  opacity: 1;
+  transition: all 900ms;
+}
+.shaino:hover .hii img {
+  transition: all 300ms;
+  border: 3px solid gold;
+
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.shaino:hover .name {
+  opacity: 0;
+  transition: all 600ms;
+}
+
+/* .shaino .profile
+{
+  height: 50px;
+  width: 50px;
+  padding: 3px;
+  background-color: white;
+  border: 3px solid green;
+  border-radius: 10%;
+
+}
+.shaino .profile img
+{
+  height: 100%;
+  width: 100%;
+} */
+.warehouse .closebtn {
+  position: absolute;
+  top: -4%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: transparent;
+  color: black;
+}
+.warehouse .closebtn span:hover {
+  background-color: transparent;
+  color: black;
+}
+.alert {
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+@keyframes alrets {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0.2;
+  }
+}
+.product {
+  height: 90vh;
+  width: 19vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: scroll;
+  border: 2px solid lightgray;
+  background-color: rgba(211, 211, 211, 0.096);
+  padding: 18px;
+}
+.channel,
+.floorspring,
+.doorcloser,
+.sl-65,
+.tendom,
+.hinges,
+.bedframe,
+.glassage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.channel-list,
+.floorspring-list,
+.doorcloser-list,
+.sl65-list,
+.tendom-list,
+.hinges-list,
+.bedframe-list,
+.glassage-list {
+  display: none;
+}
+label {
+  transition: all 600ms;
+  padding: 0px;
+}
+label:active {
+  background-color: rgba(144, 238, 144, 0.779);
+  color: black;
+  border: 1px solid black;
+}
+
+/* Glassage  */
+
+.gls-alert {
+  height: 18px;
+  width: 18px;
+  background-color: blue;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+}
+
+#gogc1 {
+  position: absolute;
+  bottom: 50%;
+  left: 57%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-ogc1:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#gogc3 {
+  position: absolute;
+  bottom: 50%;
+  left: 57%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-ogc3:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#gogc4 {
+  position: absolute;
+  bottom: 46%;
+  left: 50%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-ogc4:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#gogc5 {
+  position: absolute;
+  bottom: 50%;
+  left: 57%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-ogc5:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#g11ed {
+  position: absolute;
+  bottom: 50%;
+  left: 53.5%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-11ed:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#g22ed {
+  position: absolute;
+  bottom: 50%;
+  left: 53.5%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-22ed:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#g33ed {
+  position: absolute;
+  bottom: 50%;
+  left: 53.5%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-33ed:checked + .gls-alert {
+  opacity: 1;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: transparent;
+  /* transform: scale(1.8); */
+  /* animation: alrets 1s infinite linear; */
+}
+#g44ed {
+  position: absolute;
+  bottom: 50%;
+  left: 53.5%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-44ed:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#g55ed {
+  position: absolute;
+  bottom: 50%;
+  left: 53.5%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-55ed:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#gtb1 {
+  position: absolute;
+  bottom: 21%;
+  left: 61.5%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-tb1:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#goskh1 {
+  position: absolute;
+  bottom: 50%;
+  left: 57%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-oskh1:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#goskh2 {
+  position: absolute;
+  bottom: 50%;
+  left: 57%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-oskh2:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#goskh3 {
+  position: absolute;
+  bottom: 50%;
+  left: 57%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-oskh3:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#goskht {
+  position: absolute;
+  bottom: 50%;
+  left: 57%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-oskht:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#goskh19 {
+  position: absolute;
+  bottom: 54%;
+  left: 83%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-oskh19:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 8px;
+  font-weight: 600;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+
+#gosskh1 {
+  position: absolute;
+  bottom: 50%;
+  left: 60.7%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-osskh1:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#gosskh2 {
+  position: absolute;
+  bottom: 50%;
+  left: 60.7%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-osskh2:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#gosskh3 {
+  position: absolute;
+  bottom: 50%;
+  left: 60.7%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-osskh3:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#gosskh25 {
+  position: absolute;
+  bottom: 54%;
+  left: 83%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#g-osskh25:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+
+#channel-list-display:checked + .channel-list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  transition: all 300ms;
+  gap: 10px;
+}
+#floorspring-list-display:checked + .floorspring-list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  transition: all 300ms;
+  gap: 10px;
+}
+#doorcloser-list-display:checked + .doorcloser-list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  transition: all 300ms;
+  gap: 10px;
+}
+#sl65-list-display:checked + .sl65-list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  transition: all 300ms;
+  gap: 10px;
+}
+#tendom-list-display:checked + .tendom-list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  transition: all 300ms;
+  gap: 10px;
+}
+#hinges-list-display:checked + .hinges-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  flex-wrap: wrap;
+  transition: all 300ms;
+  gap: 10px;
+}
+#bedframe-list-display:checked + .bedframe-list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  transition: all 300ms;
+  gap: 10px;
+}
+#glassage-list-display:checked + .glassage-list {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  transition: all 300ms;
+  gap: 10px;
+}
+input {
+  display: none;
+}
+#inch-8 {
+  position: absolute;
+  top: 20%;
+  left: 74.3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#c-8:checked + .alert {
+  opacity: 1;
+  color: white;
+  background-color: brown;
+  font-size: 12px;
+  font-weight: 900;
+  animation: alrets 1s infinite linear;
+}
+#c-10:checked + .alert {
+  opacity: 1;
+  color: white;
+  background-color: brown;
+  font-size: 12px;
+  font-weight: 900;
+  animation: alrets 1s infinite linear;
+}
+#inch-10 {
+  position: absolute;
+  top: 21%;
+  left: 8.1%;
+  z-index: 1;
+  transition: all 300ms;
+}
+
+#inch-12 {
+  position: absolute;
+  top: 43%;
+  left: 4.3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#c-12:checked + .alert {
+  opacity: 1;
+  color: white;
+  background-color: brown;
+  font-size: 12px;
+  font-weight: 900;
+  animation: alrets 1s infinite linear;
+}
+#inch-14 {
+  position: absolute;
+  top: 8.1%;
+  left: 4.3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#c-14:checked + .alert {
+  opacity: 1;
+  color: white;
+  background-color: brown;
+  font-size: 12px;
+  font-weight: 900;
+  animation: alrets 1s infinite linear;
+}
+#inch-16 {
+  position: absolute;
+  top: 8.1%;
+  left: 44.5%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#c-16:checked + .alert {
+  opacity: 1;
+  color: white;
+  background-color: brown;
+  font-size: 12px;
+  font-weight: 900;
+  animation: alrets 1s infinite linear;
+}
+#inch-18 {
+  position: absolute;
+  top: 8.1%;
+  left: 24.5%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#c-18:checked + .alert {
+  opacity: 1;
+  color: white;
+  background-color: brown;
+  font-size: 12px;
+  font-weight: 900;
+  animation: alrets 1s infinite linear;
+}
+
+#inch-20 {
+  position: absolute;
+  top: 31%;
+  left: 8.1%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#c-20:checked + .alert {
+  opacity: 1;
+  color: white;
+  background-color: brown;
+  font-size: 12px;
+  font-weight: 900;
+  animation: alrets 1s infinite linear;
+}
+#inch-22 {
+  position: absolute;
+  top: 63%;
+  left: 74%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#c-22:checked + .alert {
+  opacity: 1;
+  color: white;
+  background-color: brown;
+  font-size: 12px;
+  font-weight: 900;
+  animation: alrets 1s infinite linear;
+}
+#inch-24 {
+  position: absolute;
+  top: 53%;
+  left: 64%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#c-24:checked + .alert {
+  opacity: 1;
+  color: white;
+  background-color: brown;
+  font-size: 12px;
+  font-weight: 900;
+  animation: alrets 1s infinite linear;
+}
+#csc {
+  position: absolute;
+  top: 28%;
+  left: 5%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#c-sc:checked + .alert {
+  opacity: 1;
+  color: white;
+  background-color: brown;
+  font-size: 12px;
+  font-weight: 600;
+  animation: alrets 1s infinite linear;
+}
+#cums {
+  position: absolute;
+  top: 18%;
+  left: 49%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#c-ums:checked + .alert {
+  opacity: 1;
+  color: white;
+  background-color: brown;
+  font-size: 12px;
+  font-weight: 600;
+  animation: alrets 1s infinite linear;
+}
+/* sl 65  */
+
+.sl-alert {
+  height: 18px;
+  width: 36px;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+}
+/* Sl 65 */
+
+#sl65tbr {
+  position: absolute;
+  top: 59%;
+  left: 4%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#sl-tbr:checked + .sl-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+
+#sl65scd {
+  position: absolute;
+  top: 62%;
+  left: 4%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#sl-scd:checked + .sl-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+#sl65tbt2 {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#sl-tbt2:checked + .sl-alert {
+  opacity: 1;
+  color: white;
+  font-size: 9px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+#sl65tbt24 {
+  position: absolute;
+  top: 23%;
+  right: 3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#sl-tbt24:checked + .sl-alert {
+  opacity: 1;
+  color: white;
+  font-size: 9px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+#sl65tbt3 {
+  position: absolute;
+  top: 17%;
+  right: 3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#sl-tbt3:checked + .sl-alert {
+  opacity: 1;
+  color: white;
+  font-size: 9px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+#sl65tbt36 {
+  position: absolute;
+  top: 42%;
+  right: 18%;
+  z-index: 1;
+  transition: all 300ms;
+  transform: rotate(90deg);
+}
+#sl-tbt36:checked + .sl-alert {
+  opacity: 1;
+  color: white;
+  font-size: 9px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+#sl65stbt24 {
+  position: absolute;
+  top: 63%;
+  right: 22%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#sl-stbt24:checked + .sl-alert {
+  opacity: 1;
+  color: white;
+  font-size: 8px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+#sl65stbt36 {
+  position: absolute;
+  top: 42%;
+  right: 22%;
+  z-index: 1;
+  transition: all 300ms;
+  transform: rotate(90deg);
+}
+#sl-stbt36:checked + .sl-alert {
+  opacity: 1;
+  color: white;
+  font-size: 8px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+
+/* Floor Spring */
+
+.f-alert {
+  height: 18px;
+  width: 36px;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+}
+
+#fs5500e {
+  position: absolute;
+  bottom: 9%;
+  left: 26%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-5500e:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#fs6600e {
+  position: absolute;
+  bottom: 9%;
+  left: 14%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-6600e:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#fs6600ebm {
+  position: absolute;
+  top: 49%;
+  left: 4.1%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-6600ebm:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 8px;
+  font-weight: 360;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#fs8400 {
+  position: absolute;
+  bottom: 9%;
+  left: 61%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-8400:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#fs8400bm {
+  position: absolute;
+  top: 54%;
+  left: 4.1%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-8400bm:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 8px;
+  font-weight: 360;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#fs8400s {
+  position: absolute;
+  bottom: 9%;
+  left: 84.1%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-8400s:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+
+#fs9000 {
+  position: absolute;
+  bottom: 9%;
+  left: 45.1%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-9000:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#fs9400 {
+  position: absolute;
+  bottom: 15%;
+  left: 68%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-9400:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#fs10400 {
+  position: absolute;
+  bottom: 9%;
+  left: 53%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-10400:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#fs70e {
+  position: absolute;
+  bottom: 14.4%;
+  left: 23%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-70e:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+
+#fs100 {
+  position: absolute;
+  bottom: 9%;
+  left: 79%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-100:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#fs105 {
+  position: absolute;
+  bottom: 7%;
+  left: 75%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-105:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+
+#fs135 {
+  position: absolute;
+  bottom: 7%;
+  left: 78%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#f-135:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#Gfitting {
+  position: absolute;
+  bottom: 14%;
+  left: 81%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#G-fitting:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+  background-color: transparent;
+  color: black;
+}
+#Gfittinge {
+  position: absolute;
+  bottom: 12.6%;
+  left: 14%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#G-fittinge:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+  background-color: transparent;
+  color: black;
+}
+
+#Wfitting {
+  position: absolute;
+  bottom: 13%;
+  left: 72%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#W-fitting:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 8px;
+  font-weight: 900;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+  background-color: transparent;
+  color: black;
+}
+#Wfittinge {
+  position: absolute;
+  bottom: 9%;
+  left: 17.1%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#W-fittinge:checked + .f-alert {
+  opacity: 1;
+  color: white;
+  font-size: 8px;
+  font-weight: 900;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+  background-color: transparent;
+  color: black;
+}
+
+/* Door Closer */
+.d-alert {
+  height: 18px;
+  width: 36px;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+}
+
+#d480 {
+  position: absolute;
+  bottom: 26%;
+  left: 8%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-480:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#d580 {
+  position: absolute;
+  bottom: 14%;
+  left: 6%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-580:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#d58011 {
+  position: absolute;
+  bottom: 26%;
+  left: 4%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-580-11:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#d640 {
+  position: absolute;
+  bottom: 23%;
+  left: 8%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-640:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#d680 {
+  position: absolute;
+  bottom: 14%;
+  left: 27%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-680:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#d680bm {
+  position: absolute;
+  top: 20%;
+  left: 53%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-680bm:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#d780 {
+  position: absolute;
+  bottom: 14%;
+  left: 25%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-780:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#d780bm {
+  position: absolute;
+  top: 22%;
+  left: 53%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-780bm:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#d980 {
+  position: absolute;
+  bottom: 20%;
+  left: 8%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-980:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#d980bm {
+  position: absolute;
+  top: 18%;
+  left: 53%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-980bm:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#d3800 {
+  position: absolute;
+  bottom: 8%;
+  left: 4%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-3800:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#d3800bm {
+  position: absolute;
+  top: 24%;
+  left: 53%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-3800bm:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 8px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+
+#d3800e {
+  position: absolute;
+  bottom: 20%;
+  left: 4%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-3800e:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+
+#d3800sl {
+  position: absolute;
+  bottom: 21%;
+  left: 10%;
+  z-index: 1;
+  transition: all 300ms;
+  transform: rotate(270deg);
+}
+#d-3800sl:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#d4800 {
+  position: absolute;
+  bottom: 26%;
+  left: 10%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-4800:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+
+#d6800 {
+  position: absolute;
+  bottom: 25%;
+  left: 10%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-6800:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+
+/* Tendom dwds */
+
+.t-alert {
+  height: 18px;
+  width: 36px;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+}
+#dwds418 {
+  position: absolute;
+  bottom: 35%;
+  left: 27%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-418:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#dwds618 {
+  position: absolute;
+  bottom: 35%;
+  left: 27%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-618:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#dwds818 {
+  position: absolute;
+  bottom: 35%;
+  left: 27%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-818:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#dwdspro418 {
+  position: absolute;
+  bottom: 29.7%;
+  left: 11%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-418:checked + .t-alert {
+  opacity: 1;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: transparent;
+
+  /* animation: alrets 1s infinite linear; */
+}
+#dwdspro618 {
+  position: absolute;
+  bottom: 33%;
+  left: 11%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-618:checked + .t-alert {
+  opacity: 1;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: transparent;
+
+  /* animation: alrets 1s infinite linear; */
+}
+#dwdspro818 {
+  position: absolute;
+  bottom: 35%;
+  left: 11%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-818:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  /* background-color: transparent; */
+
+  animation: alrets 1s infinite linear;
+}
+
+#dwds420 {
+  position: absolute;
+  bottom: 44%;
+  left: 56%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-420:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#dwds620 {
+  position: absolute;
+  bottom: 44%;
+  left: 52%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-620:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#dwds820 {
+  position: absolute;
+  bottom: 44%;
+  left: 60%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-820:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#dwdspro420 {
+  position: absolute;
+  top: 63%;
+  left: 4%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-420:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#dwdspro620 {
+  position: absolute;
+  top: 64%;
+  left: 11%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-620:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#dwdspro820 {
+  position: absolute;
+  top: 60%;
+  left: 11%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-820:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#dwds422 {
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-422:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#dwds622 {
+  position: absolute;
+  bottom: 45%;
+  left: 30%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-622:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#dwds822 {
+  position: absolute;
+  bottom: 40%;
+  left: 30%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-822:checked + .t-alert {
+  opacity: 1;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: transparent;
+
+  /* animation: alrets 1s infinite linear; */
+}
+#dwdspro422 {
+  position: absolute;
+  bottom: 35%;
+  left: 30%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-422:checked + .t-alert {
+  opacity: 1;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: transparent;
+
+  /* animation: alrets 1s infinite linear; */
+}
+#dwdspro622 {
+  position: absolute;
+  bottom: 35%;
+  left: 33%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-622:checked + .t-alert {
+  opacity: 1;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: transparent;
+
+  /* animation: alrets 1s infinite linear; */
+}
+#dwdspro822 {
+  position: absolute;
+  bottom: 35%;
+  left: 36%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-822:checked + .t-alert {
+  opacity: 1;
+  color: black;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: transparent;
+
+  /* animation: alrets 1s infinite linear; */
+}
+
+/* Hinges */
+
+.h-alert {
+  height: 18px;
+  width: 36px;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+}
+#ha4ssod {
+  position: absolute;
+  bottom: 5%;
+  left: 79%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-a4s-sod:checked + .h-alert {
+  opacity: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  /* background-color: transparent; */
+  animation: alrets 1s infinite linear;
+}
+#hb4ssod {
+  position: absolute;
+  bottom: 5%;
+  left: 75%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-b4s-sod:checked + .h-alert {
+  opacity: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  /* background-color: transparent; */
+  animation: alrets 1s infinite linear;
+}
+#hc4ssod {
+  position: absolute;
+  bottom: 5%;
+  left: 11%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-c4s-sod:checked + .h-alert {
+  opacity: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  /* background-color: transparent; */
+  animation: alrets 1s infinite linear;
+}
+#ha4sso {
+  position: absolute;
+  bottom: 5%;
+  left: 67%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-a4s-so:checked + .h-alert {
+  opacity: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  /* background-color: transparent; */
+  animation: alrets 1s infinite linear;
+}
+#hb4sso {
+  position: absolute;
+  bottom: 5%;
+  left: 62%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-b4s-so:checked + .h-alert {
+  opacity: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  /* background-color: transparent; */
+  animation: alrets 1s infinite linear;
+}
+#hc4sso {
+  position: absolute;
+  bottom: 5%;
+  left: 58%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-c4s-so:checked + .h-alert {
+  opacity: 1;
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  /* background-color: transparent; */
+  animation: alrets 1s infinite linear;
+}
+#ha2s3d {
+  position: absolute;
+  bottom: 22%;
+  left: 80%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-a2s-3d:checked + .h-alert {
+  opacity: 1;
+  color: yellow;
+  font-size: 12px;
+  font-weight: 900;
+  background-color: black;
+  padding: 0px;
+  animation: alrets 1s infinite linear;
+}
+#hb2s3d {
+  position: absolute;
+  bottom: 20%;
+  left: 80%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-b2s-3d:checked + .h-alert {
+  opacity: 1;
+  color: yellow;
+  font-size: 12px;
+  font-weight: 900;
+  background-color: black;
+  padding: 0px;
+  animation: alrets 1s infinite linear;
+}
+#hc2s3d {
+  position: absolute;
+  bottom: 24%;
+  left: 80%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-c2s-3d:checked + .h-alert {
+  opacity: 1;
+  color: yellow;
+  font-size: 12px;
+  font-weight: 900;
+  background-color: black;
+  padding: 0px;
+  animation: alrets 1s infinite linear;
+}
+
+#ha2std {
+  position: absolute;
+  bottom: 49%;
+  left: 1%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-a2s-td:checked + .h-alert {
+  opacity: 1;
+  color: yellow;
+  font-size: 12px;
+  font-weight: 900;
+  background-color: black;
+  padding: 0px;
+  animation: alrets 1s infinite linear;
+}
+#hb2std {
+  position: absolute;
+  bottom: 46.1%;
+  left: 1%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-b2s-td:checked + .h-alert {
+  opacity: 1;
+  color: yellow;
+  font-size: 12px;
+  font-weight: 900;
+  background-color: black;
+  padding: 0px;
+  animation: alrets 1s infinite linear;
+}
+#hc2std {
+  position: absolute;
+  bottom: 43.1%;
+  left: 1%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-c2s-td:checked + .h-alert {
+  opacity: 1;
+  color: yellow;
+  font-size: 12px;
+  font-weight: 900;
+  background-color: black;
+  padding: 0px;
+  animation: alrets 1s infinite linear;
+}
+
+/* Bedframe */
+.bf-alert {
+  height: 18px;
+  width: 36px;
+  background-color: rgba(0, 0, 0, 0.752);
+  border-radius: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  opacity: 0;
+}
+#bfn1500 {
+  position: absolute;
+  bottom: 28%;
+  left: 82%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#b-fn-1500:checked + .bf-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 900;
+
+  animation: alrets 1s infinite linear;
+}
+#bpn750 {
+  position: absolute;
+  bottom: 27%;
+  left: 75%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#b-pn-750:checked + .bf-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+
+#bpn1000 {
+  position: absolute;
+  bottom: 27%;
+  left: 75%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#b-pn-1000:checked + .bf-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#bpn1200 {
+  position: absolute;
+  bottom: 27%;
+  left: 75%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#b-pn-1200:checked + .bf-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#bpn1500 {
+  position: absolute;
+  bottom: 27%;
+  left: 75%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#b-pn-1500:checked + .bf-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#bpn1750 {
+  position: absolute;
+  bottom: 27%;
+  left: 75%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#b-pn-1750:checked + .bf-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
+#bpn2000 {
+  position: absolute;
+  bottom: 27%;
+  left: 75%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#b-pn-2000:checked + .bf-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+
+  animation: alrets 1s infinite linear;
+}
