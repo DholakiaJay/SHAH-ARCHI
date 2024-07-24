@@ -21,7 +21,7 @@ span:hover {
 .warehouse {
   height: 90vh;
   width: 81vw;
-  background-image: url("images/warehouse-blueprint.png");
+  background-image: url("warehouse-blueprint.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   position: relative;
