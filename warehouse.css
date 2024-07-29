@@ -81,6 +81,7 @@ input {
 }
 .shaino:hover .hii {
   opacity: 1;
+  background-color:black;
 
   transition: all 900ms;
 }
