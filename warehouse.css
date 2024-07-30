@@ -98,15 +98,14 @@ input {
 }
 
 h4 {
-  
   font-weight: 600;
   background-color: rgba(128, 128, 128, 0.203);
-  color:black;
+  color: black;
 }
 
 .warehouse .closebtn {
   position: absolute;
-  top: -4%;
+  top: -5%;
   left: 0%;
   display: flex;
   justify-content: center;
@@ -121,8 +120,7 @@ h4 {
   background-color: transparent;
   color: black;
 }
-.additems
-{
+.additems {
   position: absolute;
   bottom: 5%;
   left: -5%;
@@ -132,15 +130,13 @@ h4 {
   border-radius: 50%;
   border: 2px solid black;
 }
-.additems:hover
-{
+.additems:hover {
   background-color: black;
   color: white;
 }
-.toparrows
-{
+.toparrows {
   position: absolute;
-  bottom:15%;
+  bottom: 15%;
   left: -5%;
   background-color: lightgrey;
   padding: 6px 10px;
@@ -148,8 +144,7 @@ h4 {
   border: 2px solid black;
   border-radius: 50%;
 }
-.toparrows:hover
-{
+.toparrows:hover {
   background-color: black;
   color: white;
 }
@@ -164,7 +159,6 @@ h4 {
 }
 
 .product {
-  
   height: 90vh;
   width: 19vw;
   display: flex;
@@ -172,8 +166,8 @@ h4 {
   justify-content: flex-start;
   align-items: flex-start;
   overflow-y: scroll;
-  border: 2px solid rgba(211, 211, 211, 0.900);
-  background-color: rgba(211, 211, 211, 0.180);
+  border: 2px solid rgba(211, 211, 211, 0.9);
+  background-color: rgba(211, 211, 211, 0.18);
   padding: 18px;
 }
 
@@ -191,7 +185,6 @@ h4 {
   justify-content: flex-start;
   align-items: flex-start;
   flex-wrap: wrap;
-  
 }
 .channel-list,
 .floorspring-list,
@@ -214,7 +207,6 @@ label:active {
   border: 1px solid black;
   transition: all 300ms;
 }
-
 
 #channel-list-display:checked + .channel-list {
   display: flex;
@@ -296,14 +288,15 @@ label:active {
 }
 /* Secutech */
 .sec-alert {
-  height:21px;
+  height: 21px;
   width: 21px;
-  background-color:blue;
+  background-color: blue;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color:black;
+  color: black;
+  font-size: 9px;
   opacity: 0;
 }
 
@@ -568,11 +561,11 @@ label:active {
 }
 #sl-fdllr:checked + .sec-alert {
   opacity: 1;
-  color: white;
-  font-size: 12px;
+  color:blue;
+  font-size: 21px;
   font-weight: 300;
   transform: scale(1.8);
-
+  background-color: transparent;
   animation: alrets 1s infinite linear;
 }
 #slatom11 {
@@ -615,6 +608,246 @@ label:active {
   transition: all 300ms;
 }
 #sl-iries:checked + .sec-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+
+/* Safe */
+
+.safe-alert {
+  height: 21px;
+  width: 21px;
+  background-color: blue;
+  border-radius: 21%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  border: 3px solid white;
+  opacity: 0;
+}
+
+#sssafilo1 {
+  position: absolute;
+  top: 54.9%;
+  left: 63.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-safilo1:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sssafilod1 {
+  position: absolute;
+  top: 54.9%;
+  left: 63.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-safilod1:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sssafilo2 {
+  position: absolute;
+  top: 54.9%;
+  left: 63.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-safilo2:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sssafilod2 {
+  position: absolute;
+  top: 54.9%;
+  left: 63.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-safilod2:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sssafilox {
+  position: absolute;
+  top: 54.9%;
+  left: 63.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-safilox:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sssafiloz {
+  position: absolute;
+  top: 54.9%;
+  left: 63.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-safiloz:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sssafilozmax {
+  position: absolute;
+  top: 54.9%;
+  left: 63.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-safilozmax:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 9px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sstusker10 {
+  position: absolute;
+  top: 45.9%;
+  left: 69.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-tusker10:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sstusker11 {
+  position: absolute;
+  top: 45.9%;
+  left: 69.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-tusker11:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sstusker22 {
+  position: absolute;
+  top: 45.9%;
+  left: 69.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-tusker22:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sstusker33 {
+  position: absolute;
+  top: 45.9%;
+  left: 69.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-tusker33:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sstusker44 {
+  position: absolute;
+  top: 45.9%;
+  left: 69.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-tusker44:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#sstuskernxt {
+  position: absolute;
+  top: 45.9%;
+  left: 69.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-tuskernxt:checked + .safe-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+
+  animation: alrets 1s infinite linear;
+}
+#ssbasi10 {
+  position: absolute;
+  top: 45.9%;
+  left: 69.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#ss-basi10:checked + .safe-alert {
   opacity: 1;
   color: white;
   font-size: 12px;
@@ -1281,11 +1514,11 @@ label:active {
 #h-55e32457bm:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #h5532600 {
   position: absolute;
@@ -1297,11 +1530,11 @@ label:active {
 #h-5532600:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #h55351500 {
   position: absolute;
@@ -1313,11 +1546,11 @@ label:active {
 #h-55351500:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #h55351500bm {
   position: absolute;
@@ -1329,11 +1562,11 @@ label:active {
 #h-55351500bm:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #h1125325 {
   position: absolute;
@@ -1345,11 +1578,11 @@ label:active {
 #h-1125325:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #h1125325bm {
   position: absolute;
@@ -1377,11 +1610,11 @@ label:active {
 #h-1125450:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 
 #gopl1 {
@@ -1393,8 +1626,8 @@ label:active {
 }
 #g-opl1:checked + .gls-alert {
   opacity: 1;
-  color:black;
- background-color: transparent;
+  color: black;
+  background-color: transparent;
   font-size: 20px;
   font-weight: 300;
   /* transform: scale(1.8); 
@@ -1410,11 +1643,11 @@ label:active {
 #g-opl1e:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #gopl2a {
   position: absolute;
@@ -1426,11 +1659,11 @@ label:active {
 #g-opl2a:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #gopl2b {
   position: absolute;
@@ -1442,11 +1675,11 @@ label:active {
 #g-opl2b:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 
 #gopl3a {
@@ -1459,11 +1692,11 @@ label:active {
 #g-opl3a:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #gopl3b {
   position: absolute;
@@ -1475,11 +1708,11 @@ label:active {
 #g-opl3b:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #gopf640e {
   position: absolute;
@@ -1491,11 +1724,11 @@ label:active {
 #g-opf640e:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 6px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #gopl4a4bn {
   position: absolute;
@@ -1507,11 +1740,11 @@ label:active {
 #g-opl4a4bn:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #gopl4ans {
   position: absolute;
@@ -1523,11 +1756,11 @@ label:active {
 #g-opl4ans:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #gopl4a4bk2n {
   position: absolute;
@@ -1539,11 +1772,11 @@ label:active {
 #g-opl4a4bk2n:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #gopl4a4bk2nbm {
   position: absolute;
@@ -1555,11 +1788,11 @@ label:active {
 #g-opl4a4bk2nbm:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #gopl4ask2n {
   position: absolute;
@@ -1571,11 +1804,11 @@ label:active {
 #g-opl4ask2n:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #gopl4ask2nbm {
   position: absolute;
@@ -1587,11 +1820,11 @@ label:active {
 #g-opl4ask2nbm:checked + .gls-alert {
   opacity: 1;
   color: white;
- 
+
   font-size: 12px;
   font-weight: 300;
-  transform: scale(1.8); 
-  animation: alrets 1s infinite linear; 
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 
 /* Channel */
