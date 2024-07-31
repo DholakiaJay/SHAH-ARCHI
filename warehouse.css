@@ -24,6 +24,69 @@ span:hover {
 input {
   display: none;
 }
+.employee {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+.emp {
+  position: absolute;
+}
+.emp img {
+  height: 54px;
+  width: 54px;
+  filter: drop-shadow(-0.5rem 0.3rem 0rem rgba(0, 0, 0, 0.353));
+}
+#emp1 {
+  top: 50%;
+  left: 47%;
+  animation: aniemp1 36s infinite linear;
+  animation-direction: normal;
+}
+/* Animtion epm 1 */
+@keyframes aniemp1 {
+  90% {
+    transform: translateX(-450px);
+  }
+  91% {
+    transform: rotateY(180deg);
+  }
+}
+#emp2 {
+  top: 50%;
+  left: 50%;
+}
+#emp3 {
+  bottom: 18%;
+  right: 21%;
+  animation: aniemp3 36s infinite linear;
+  animation-direction: normal;
+}
+/* Animtion epm 3 */
+@keyframes aniemp3 {
+  90% {
+    transform: translateX(-777px);
+  }
+  91% {
+    transform: rotateY(90deg);
+  }
+}
+#emp4 {
+  top: 26%;
+  left: 12%;
+  animation: aniemp4 36s infinite linear;
+  animation-direction: normal;
+}
+/* Animtion epm 4 */
+@keyframes aniemp4 {
+  90% {
+    transform: translateX(810px);
+  }
+  91% {
+    transform: rotateY(90deg);
+  }
+}
 
 .warehouse {
   height: 90vh;
@@ -81,7 +144,6 @@ input {
 }
 .shaino:hover .hii {
   opacity: 1;
-  
 
   transition: all 900ms;
 }
@@ -562,7 +624,7 @@ label:active {
 }
 #sl-fdllr:checked + .sec-alert {
   opacity: 1;
-  color:blue;
+  color: blue;
   font-size: 21px;
   font-weight: 300;
   transform: scale(1.8);
