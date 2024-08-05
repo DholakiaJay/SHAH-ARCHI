@@ -591,6 +591,16 @@ input {
   bottom: 27.9%;
   left: 45.9%;
 }
+.view .vdc #dhtwo {
+  position: absolute;
+  bottom: 27.9%;
+  left: 39.6%;
+}
+.view .vdc #dhthree {
+  position: absolute;
+  bottom: 36.9%;
+  left: 39.6%;
+}
 .view .vdc #sfone {
   position: absolute;
   top: 35.1%;
