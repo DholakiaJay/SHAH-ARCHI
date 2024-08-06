@@ -186,7 +186,7 @@ input {
   font-weight: 600;
   border: 3px solid grey;
   backdrop-filter: blur(9px);
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 #display-number:checked + .number {
   transition: 300ms;
@@ -221,7 +221,7 @@ input {
   font-weight: 600;
   border: 3px solid grey;
   backdrop-filter: blur(9px);
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 
 #display-view:checked + .view {
