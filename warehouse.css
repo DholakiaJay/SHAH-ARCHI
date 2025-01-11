@@ -8,19 +8,6 @@ body {
   align-items: center;
 }
 
-/* .staris
-{
-  
-  position: absolute;
-  top: -1.2%;
-  left: 52.20%;
-
-}
-.staris img
-{
-  width: 21.60%;
-  height: 18.9%;
-} */
 span:hover {
   background-color: black;
   color: white;
@@ -37,6 +24,20 @@ span:hover {
 }
 input {
   display: none;
+}
+.steps
+{
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  height: 90px;
+  width: 21%;
+}
+.steps img
+{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .controls {
   position: absolute;
@@ -215,26 +216,10 @@ input {
   position: absolute;
   gap: 9px;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   border: 3px solid grey;
   backdrop-filter: blur(9px);
 }
-/* .me {
-  background-color: transparent;
-  animation: mynumber 1s infinite linear;
-}
-@keyframes mynumber {
-  0% {
-    transition: all 300ms;
-    transform: scale(1.2);
-
-  }
-  100% {
-    transition: all 300ms;
-    transform: scale(1);
-
-  }
-} */
 #display-location:checked + .location {
   transition: 300ms;
   background-color: rgba(255, 255, 255, 0.379);
@@ -272,27 +257,17 @@ input {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(245, 245, 245, 0.271);
-  height: 60.39%;
+  background-color: rgba(245, 245, 245, 0.837);
+  height: 73.8%;
   width: 18%;
-  border-radius: 1.8%;
+  border-radius: 3%;
   position: absolute;
-  top: 12.69%;
-  right: 0.9%;
-  padding: 54px 18px;
-  backdrop-filter: blur(9px);
-  border: 0.2.7rem solid rgba(236, 228, 228, 0.512);
-  overflow-y: auto;
-}
-.whitems h3 {
-  color: white;
-  font-weight: 450;
-
-  font-size: 0.9rem;
-}
-.whitems h3:hover {
-  background-color: black;
-  color: whitesmoke;
+  top: 6.3%;
+  right: 0.5%;
+  padding: 6px;
+  backdrop-filter: blur(0px);
+  border: 0.3rem solid rgba(236, 228, 228, 0.512);
+  overflow: scroll;
 }
 .whitems span {
   display: flex;
@@ -316,16 +291,16 @@ input {
   width: 12%;
   background-color: rgba(29, 6, 6, 0.73);
   padding: 9px;
-  border-radius: 9%;
-  /* border: 2px solid white; */
+  border-radius: 12px;
+  border: 2px solid white;
   font-size: 1.6rem;
 }
 .vicon i {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.3rem;
-  border-radius: 9%;
+  padding: 9px;
+  border-radius: 12px;
   border: 1px solid transparent;
   font-size: 1.2rem;
 }
@@ -629,16 +604,6 @@ input {
   bottom: 27.9%;
   left: 45.9%;
 }
-.view .vdc #dhtwo {
-  position: absolute;
-  bottom: 27.9%;
-  left: 39.6%;
-}
-.view .vdc #dhthree {
-  position: absolute;
-  bottom: 36.9%;
-  left: 39.6%;
-}
 .view .vdc #sfone {
   position: absolute;
   top: 35.1%;
@@ -777,7 +742,7 @@ h4 {
 
 .warehouse .closebtn {
   position: absolute;
-  top: -5%;
+  top: -5.4%;
   left: 0%;
   display: flex;
   justify-content: center;
@@ -1194,15 +1159,15 @@ label:active {
 }
 #slfdllg2g {
   position: absolute;
-  top: 29.7%;
-  left: 4.8%;
+  top: 39.7%;
+  left: 49.3%;
   z-index: 1;
   transition: all 300ms;
 }
 #sl-fdllg2g:checked + .sec-alert {
   opacity: 1;
   color: white;
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 300;
   transform: scale(1.8);
 
@@ -1210,15 +1175,15 @@ label:active {
 }
 #slfdllg2w {
   position: absolute;
-  top: 29.7%;
-  left: 4.8%;
+  top: 36.7%;
+  left: 49.3%;
   z-index: 1;
   transition: all 300ms;
 }
 #sl-fdllg2w:checked + .sec-alert {
   opacity: 1;
   color: white;
-  font-size: 12px;
+  font-size: 9px;
   font-weight: 300;
   transform: scale(1.8);
 
@@ -1242,8 +1207,8 @@ label:active {
 }
 #slatom11 {
   position: absolute;
-  bottom: 3.6%;
-  left: 30%;
+  top: 3.6%;
+  left: 13%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -1258,8 +1223,8 @@ label:active {
 }
 #slatom22 {
   position: absolute;
-  bottom: 3.6%;
-  left: 30%;
+  top: 3.6%;
+  left: 15%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -1680,7 +1645,7 @@ label:active {
 #gtb1 {
   position: absolute;
   bottom: 21%;
-  left: 61.5%;
+  left: 76.5%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -1888,6 +1853,7 @@ label:active {
   transform: scale(1.8);
   animation: alrets 1s infinite linear;
 }
+
 #strackb1 {
   position: absolute;
   top: 39%;
@@ -1898,6 +1864,23 @@ label:active {
 #s-trackb1:checked + .gls-alert {
   opacity: 1;
   color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+
+#strackb12mtr {
+  position: absolute;
+  top: 23%;
+  right: 3.3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#s-trackb12mtr:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  background-color: black;
   font-size: 12px;
   font-weight: 300;
   transform: scale(1.8);
@@ -1918,6 +1901,32 @@ label:active {
   transform: scale(1.8);
   animation: alrets 1s infinite linear;
 }
+
+#strackb22mtr {
+  position: absolute;
+  top: 23%;
+  right: 3.3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#s-trackb22mtr:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+
+.b3-size,
+.b3bm-size,
+.b1-size,
+.b2-size {
+  display: none;
+  transition: all 300ms;
+}
+
 #strackb3 {
   position: absolute;
   top: 41%;
@@ -1933,16 +1942,81 @@ label:active {
   transform: scale(1.8);
   animation: alrets 1s infinite linear;
 }
+#strackb32mtr {
+  position: absolute;
+  top: 23%;
+  right: 3.3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#s-trackb32mtr:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#strackb33mtr {
+  position: absolute;
+  top: 25%;
+  right: 3.3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#s-trackb33mtr:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
 #strackb3bm {
   position: absolute;
-  top: 41%;
-  right: 18.9%;
+  top: 45%;
+  right: 15.3%;
   z-index: 1;
   transition: all 300ms;
 }
 #s-trackb3bm:checked + .gls-alert {
   opacity: 1;
   color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+
+#strackb3bm2mtr {
+  position: absolute;
+  top: 36%;
+  right: 35.3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#s-trackb3bm2mtr:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
+#strackb3bm3mtr {
+  position: absolute;
+  top: 37.5%;
+  right: 15.3%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#s-trackb3bm3mtr:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  background-color: black;
   font-size: 12px;
   font-weight: 300;
   transform: scale(1.8);
@@ -2117,8 +2191,8 @@ label:active {
 
 #h5525600 {
   position: absolute;
-  bottom: 40%;
-  left: 42.8%;
+  bottom: 23%;
+  left: 43.8%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -2163,23 +2237,22 @@ label:active {
 #h55e32457 {
   position: absolute;
   bottom: 34.2%;
-  left: 49.5%;
+  left: 40.9%;
   z-index: 1;
   transition: all 300ms;
 }
 #h-55e32457:checked + .gls-alert {
   opacity: 1;
-  color: black;
-  background-color: transparent;
-  font-size: 21px;
-  font-weight: 900;
-  /* transform: scale(1.8); */
-  /* animation: alrets 1s infinite linear; */
+  color:white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #h55e32457bm {
   position: absolute;
-  bottom: 24%;
-  left: 40.8%;
+  top: 3%;
+  left: 25.8%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -2226,8 +2299,8 @@ label:active {
 }
 #h55351500bm {
   position: absolute;
-  bottom: 33%;
-  left: 76.5%;
+  top: 39%;
+  left: 90.8%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -2258,24 +2331,23 @@ label:active {
 }
 #h1125325bm {
   position: absolute;
-  top: 20.2%;
-  left: 4%;
+  top: 10.2%;
+  left: 49.5%;
   z-index: 1;
   transition: all 300ms;
 }
 #h-1125325bm:checked + .gls-alert {
   opacity: 1;
-  color: black;
-  background-color: transparent;
-  font-size: 21px;
-  font-weight: 900;
-  /* transform: scale(1.8); */
-  /* animation: alrets 1s infinite linear; */
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #h1125450 {
   position: absolute;
-  bottom: 40%;
-  left: 42.9%;
+  bottom: 30%;
+  left: 49.5%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -2288,27 +2360,41 @@ label:active {
   transform: scale(1.8);
   animation: alrets 1s infinite linear;
 }
+#h1132600 {
+  position: absolute;
+  bottom: 24%;
+  left: 44.5%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#h-1132600:checked + .gls-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
+}
 
 #gopl1 {
   position: absolute;
-  bottom: 14%;
-  left: 72.8%;
+  top: 36%;
+  left: 60.8%;
   z-index: 1;
   transition: all 300ms;
 }
 #g-opl1:checked + .gls-alert {
   opacity: 1;
-  color: black;
-  background-color: transparent;
-  font-size: 20px;
+  color: white;
+  font-size: 12px;
   font-weight: 300;
-  /* transform: scale(1.8); 
-  animation: alrets 1s infinite linear;  */
+  transform: scale(1.8);
+  animation: alrets 1s infinite linear;
 }
 #gopl1e {
   position: absolute;
-  bottom: 33%;
-  left: 64.8%;
+  bottom: 21%;
+  left: 60.8%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -2389,7 +2475,7 @@ label:active {
 #gopf640e {
   position: absolute;
   bottom: 14%;
-  left: 37.8%;
+  left: 72.8%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -2512,7 +2598,7 @@ label:active {
   color: white;
   background-color: brown;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 630;
   animation: alrets 1s infinite linear;
 }
 #c-10:checked + .alert {
@@ -2520,12 +2606,12 @@ label:active {
   color: white;
   background-color: brown;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 630;
   animation: alrets 1s infinite linear;
 }
 #inch-10 {
   position: absolute;
-  top: 21%;
+  top: 19%;
   left: 8.1%;
   z-index: 1;
   transition: all 300ms;
@@ -2543,7 +2629,7 @@ label:active {
   color: white;
   background-color: brown;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 630;
   animation: alrets 1s infinite linear;
 }
 #inch-14 {
@@ -2558,7 +2644,7 @@ label:active {
   color: white;
   background-color: brown;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 630;
   animation: alrets 1s infinite linear;
 }
 #inch-16 {
@@ -2573,7 +2659,7 @@ label:active {
   color: white;
   background-color: brown;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 630;
   animation: alrets 1s infinite linear;
 }
 #inch-18 {
@@ -2588,7 +2674,7 @@ label:active {
   color: white;
   background-color: brown;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 630;
   animation: alrets 1s infinite linear;
 }
 
@@ -2604,13 +2690,13 @@ label:active {
   color: white;
   background-color: brown;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 630;
   animation: alrets 1s infinite linear;
 }
 #inch-22 {
   position: absolute;
-  top: 63%;
-  left: 74%;
+  top: 23%;
+  left: 8%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -2619,13 +2705,13 @@ label:active {
   color: white;
   background-color: brown;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 630;
   animation: alrets 1s infinite linear;
 }
 #inch-24 {
   position: absolute;
-  top: 53%;
-  left: 64%;
+  top: 21%;
+  left: 8%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -2634,7 +2720,7 @@ label:active {
   color: white;
   background-color: brown;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 630;
   animation: alrets 1s infinite linear;
 }
 #csc {
@@ -2859,10 +2945,9 @@ label:active {
 }
 #fs8300 {
   position: absolute;
-  bottom: 25.2%;
-  left: 12%;
+  bottom: 9%;
+  left: 44.1%;
   z-index: 1;
-  
   transition: all 300ms;
 }
 #f-8300:checked + .f-alert {
@@ -2922,7 +3007,7 @@ label:active {
 #fs9000 {
   position: absolute;
   bottom: 9%;
-  left: 45.1%;
+  left: 48.6%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -2936,8 +3021,8 @@ label:active {
 }
 #fs9400 {
   position: absolute;
-  bottom: 15%;
-  left: 68%;
+  bottom: 9%;
+  left: 53.1%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -2952,7 +3037,7 @@ label:active {
 #fs10400 {
   position: absolute;
   bottom: 9%;
-  left: 53%;
+  left: 57%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -2997,7 +3082,7 @@ label:active {
 }
 #fsw100 {
   position: absolute;
-  bottom: 15%;
+  bottom: 9%;
   left: 72%;
   z-index: 1;
   transition: all 300ms;
@@ -3027,7 +3112,7 @@ label:active {
 }
 #fsw105 {
   position: absolute;
-  bottom: 15%;
+  bottom: 9%;
   left: 72%;
   z-index: 1;
   transition: all 300ms;
@@ -3127,6 +3212,10 @@ label:active {
 }
 
 /* Door Closer */
+
+.mrp {
+  color: transparent;
+}
 .d-alert {
   height: 18px;
   width: 36px;
@@ -3156,7 +3245,7 @@ label:active {
 }
 #d580 {
   position: absolute;
-  bottom: 14%;
+  bottom: 24%;
   left: 6%;
   z-index: 1;
   transition: all 300ms;
@@ -3261,8 +3350,8 @@ label:active {
 }
 #d980 {
   position: absolute;
-  bottom: 20%;
-  left: 8%;
+  bottom: 27%;
+  left: 10%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -3354,8 +3443,8 @@ label:active {
 }
 #d4800 {
   position: absolute;
-  bottom: 26%;
-  left: 10%;
+  bottom: 23%;
+  left: 4%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -3371,7 +3460,7 @@ label:active {
 #d6800 {
   position: absolute;
   bottom: 25%;
-  left: 10%;
+  left: 4%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -3381,6 +3470,78 @@ label:active {
   font-size: 12px;
   font-weight: 300;
 
+  animation: alrets 1s infinite linear;
+}
+#d6800sl {
+  position: absolute;
+  bottom: 25%;
+  left: 4%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-6800sl:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+#d1150 {
+  position: absolute;
+  bottom: 25%;
+  left: 4%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-1150:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+#ddc601390 {
+  position: absolute;
+  bottom: 33%;
+  left: 12%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-dc-60-1390:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+
+#ddc601610 {
+  position: absolute;
+  bottom: 33%;
+  left: 12%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-dc-60-1610:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+
+#ddc601905 {
+  position: absolute;
+  bottom: 33%;
+  left: 12%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#d-dc-60-1905:checked + .d-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
   animation: alrets 1s infinite linear;
 }
 
@@ -3397,87 +3558,82 @@ label:active {
   color: white;
   opacity: 0;
 }
-#dwds418 {
+#dwdspro416 {
   position: absolute;
-  bottom: 35%;
-  left: 27%;
+  top: 53.1%;
+  left: 62.6%;
   z-index: 1;
   transition: all 300ms;
 }
-#dwds-418:checked + .t-alert {
+#dwds-pro-416:checked + .t-alert {
   opacity: 1;
   color: white;
   font-size: 12px;
   font-weight: 300;
-
   animation: alrets 1s infinite linear;
 }
-#dwds618 {
+#dwdspro616 {
   position: absolute;
-  bottom: 35%;
-  left: 27%;
+  top: 53.1%;
+  left: 60%;
   z-index: 1;
   transition: all 300ms;
 }
-#dwds-618:checked + .t-alert {
+#dwds-pro-616:checked + .t-alert {
   opacity: 1;
   color: white;
   font-size: 12px;
   font-weight: 300;
-
   animation: alrets 1s infinite linear;
 }
-#dwds818 {
+
+#dwdspro816 {
   position: absolute;
-  bottom: 35%;
-  left: 27%;
+  top: 53.1%;
+  left: 58%;
   z-index: 1;
   transition: all 300ms;
 }
-#dwds-818:checked + .t-alert {
+#dwds-pro-816:checked + .t-alert {
   opacity: 1;
   color: white;
   font-size: 12px;
   font-weight: 300;
-
   animation: alrets 1s infinite linear;
 }
+
 #dwdspro418 {
   position: absolute;
-  bottom: 29.7%;
-  left: 11%;
+  top: 54%;
+  left: 45%;
   z-index: 1;
   transition: all 300ms;
 }
 #dwds-pro-418:checked + .t-alert {
   opacity: 1;
-  color: black;
-  font-size: 20px;
+  color: white;
+  font-size: 12px;
   font-weight: 300;
-  background-color: transparent;
-
-  /* animation: alrets 1s infinite linear; */
+  animation: alrets 1s infinite linear;
 }
 #dwdspro618 {
   position: absolute;
-  bottom: 33%;
-  left: 11%;
+  top: 54%;
+  left: 48%;
   z-index: 1;
   transition: all 300ms;
 }
 #dwds-pro-618:checked + .t-alert {
   opacity: 1;
-  color: black;
-  font-size: 20px;
+  color: white;
+  font-size: 12px;
   font-weight: 300;
-  background-color: transparent;
-
-  /* animation: alrets 1s infinite linear; */
+  animation: alrets 1s infinite linear;
 }
 #dwdspro818 {
   position: absolute;
-  bottom: 35%;
-  left: 11%;
+  top: 54%;
+  left: 42%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -3491,51 +3647,6 @@ label:active {
   animation: alrets 1s infinite linear;
 }
 
-#dwds420 {
-  position: absolute;
-  bottom: 44%;
-  left: 56%;
-  z-index: 1;
-  transition: all 300ms;
-}
-#dwds-420:checked + .t-alert {
-  opacity: 1;
-  color: white;
-  font-size: 12px;
-  font-weight: 300;
-
-  animation: alrets 1s infinite linear;
-}
-#dwds620 {
-  position: absolute;
-  bottom: 44%;
-  left: 52%;
-  z-index: 1;
-  transition: all 300ms;
-}
-#dwds-620:checked + .t-alert {
-  opacity: 1;
-  color: white;
-  font-size: 12px;
-  font-weight: 300;
-
-  animation: alrets 1s infinite linear;
-}
-#dwds820 {
-  position: absolute;
-  bottom: 44%;
-  left: 60%;
-  z-index: 1;
-  transition: all 300ms;
-}
-#dwds-820:checked + .t-alert {
-  opacity: 1;
-  color: white;
-  font-size: 12px;
-  font-weight: 300;
-
-  animation: alrets 1s infinite linear;
-}
 #dwdspro420 {
   position: absolute;
   top: 63%;
@@ -3581,99 +3692,90 @@ label:active {
 
   animation: alrets 1s infinite linear;
 }
-#dwds422 {
-  position: absolute;
-  bottom: 50%;
-  left: 30%;
-  z-index: 1;
-  transition: all 300ms;
-}
-#dwds-422:checked + .t-alert {
-  opacity: 1;
-  color: white;
-  font-size: 12px;
-  font-weight: 300;
-
-  animation: alrets 1s infinite linear;
-}
-#dwds622 {
-  position: absolute;
-  bottom: 45%;
-  left: 30%;
-  z-index: 1;
-  transition: all 300ms;
-}
-#dwds-622:checked + .t-alert {
-  opacity: 1;
-  color: white;
-  font-size: 12px;
-  font-weight: 300;
-
-  animation: alrets 1s infinite linear;
-}
-#dwds822 {
-  position: absolute;
-  bottom: 40%;
-  left: 30%;
-  z-index: 1;
-  transition: all 300ms;
-}
-#dwds-822:checked + .t-alert {
-  opacity: 1;
-  color: black;
-  font-size: 20px;
-  font-weight: 300;
-  background-color: transparent;
-
-  /* animation: alrets 1s infinite linear; */
-}
 #dwdspro422 {
   position: absolute;
-  bottom: 35%;
-  left: 30%;
+  top: 53.1%;
+  left: 54.12%;
   z-index: 1;
   transition: all 300ms;
 }
 #dwds-pro-422:checked + .t-alert {
   opacity: 1;
-  color: black;
-  font-size: 20px;
+  color: white;
+  font-size: 12px;
   font-weight: 300;
-  background-color: transparent;
-
-  /* animation: alrets 1s infinite linear; */
+  animation: alrets 1s infinite linear;
 }
 #dwdspro622 {
   position: absolute;
-  bottom: 35%;
-  left: 33%;
+  top: 53.1%;
+  left: 56%;
   z-index: 1;
   transition: all 300ms;
 }
 #dwds-pro-622:checked + .t-alert {
   opacity: 1;
-  color: black;
-  font-size: 20px;
+  color: white;
+  font-size: 12px;
   font-weight: 300;
-  background-color: transparent;
-
-  /* animation: alrets 1s infinite linear; */
+  animation: alrets 1s infinite linear;
 }
 #dwdspro822 {
   position: absolute;
-  bottom: 35%;
-  left: 36%;
+  top: 50.13%;
+  left: 45%;
   z-index: 1;
   transition: all 300ms;
 }
 #dwds-pro-822:checked + .t-alert {
   opacity: 1;
-  color: black;
-  font-size: 20px;
+  color: white;
+  font-size: 12px;
   font-weight: 300;
-  background-color: transparent;
+  animation: alrets 1s infinite linear;
+}
 
-  /* animation: alrets 1s infinite linear; */
+#dwdspro424 {
+  position: absolute;
+  bottom: 40.12%;
+  left: 38.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-424:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+#dwdspro624 {
+  position: absolute;
+  bottom: 40.12%;
+  left: 41.9%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-624:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
+}
+#dwdspro824 {
+  position: absolute;
+  bottom: 40.12%;
+  left: 44.5%;
+  z-index: 1;
+  transition: all 300ms;
+}
+#dwds-pro-824:checked + .t-alert {
+  opacity: 1;
+  color: white;
+  font-size: 12px;
+  font-weight: 300;
+  animation: alrets 1s infinite linear;
 }
 
 /* Hinges */
@@ -3736,8 +3838,8 @@ label:active {
 }
 #ha4sso {
   position: absolute;
-  bottom: 5%;
-  left: 67%;
+  bottom: 22%;
+  left: 75%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -3751,8 +3853,8 @@ label:active {
 }
 #hb4sso {
   position: absolute;
-  bottom: 5%;
-  left: 62%;
+  bottom: 42.5%;
+  left: 61%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -3767,7 +3869,7 @@ label:active {
 #hc4sso {
   position: absolute;
   bottom: 5%;
-  left: 58%;
+  left: 70%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -3781,8 +3883,8 @@ label:active {
 }
 #ha2s3d {
   position: absolute;
-  bottom: 22%;
-  left: 80%;
+  bottom: 27%;
+  left: 64%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -3790,15 +3892,15 @@ label:active {
   opacity: 1;
   color: yellow;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 300;
   background-color: black;
   padding: 0px;
   animation: alrets 1s infinite linear;
 }
 #hb2s3d {
   position: absolute;
-  bottom: 20%;
-  left: 80%;
+  bottom: 25%;
+  left: 64%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -3806,15 +3908,15 @@ label:active {
   opacity: 1;
   color: yellow;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 300;
   background-color: black;
   padding: 0px;
   animation: alrets 1s infinite linear;
 }
 #hc2s3d {
   position: absolute;
-  bottom: 24%;
-  left: 80%;
+  bottom: 23%;
+  left: 64%;
   z-index: 1;
   transition: all 300ms;
 }
@@ -3822,7 +3924,7 @@ label:active {
   opacity: 1;
   color: yellow;
   font-size: 12px;
-  font-weight: 900;
+  font-weight: 300;
   background-color: black;
   padding: 0px;
   animation: alrets 1s infinite linear;
@@ -3900,8 +4002,8 @@ label:active {
   opacity: 1;
   color: white;
   font-size: 12px;
-  font-weight: 900;
-
+  font-weight: 600;
+  padding: 3px;
   animation: alrets 1s infinite linear;
 }
 #bpn750 {
